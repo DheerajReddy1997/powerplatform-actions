@@ -66,13 +66,13 @@ jobs:
         environment-url: 'https://org8656d99b.crm8.dynamics.com/'
         user-name: 'KasifMd@kasifm.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
-        solution-name: AssetCheckout
-        solution-output-file: out/exported/AssetCheckout.zip
+        solution-name: cr4769c
+        solution-output-file: out/exported/cr4769c.zip
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@v0
       with:
-        solution-file: out/exported/AssetCheckout.zip
-        solution-folder: out/solutions/AssetCheckout
-        solution-type: 'Managed'
+        solution-file: out/exported/cr4769c.zip
+        solution-folder: out/solutions/cr4769c
+        solution-type: 'Unmanaged'
         overwrite-files: true
