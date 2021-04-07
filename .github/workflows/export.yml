@@ -23,14 +23,14 @@ jobs:
         user-name: 'KasifMd@kasifm.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
 
-#     - name: export-solution action
-#       uses: microsoft/powerplatform-actions/export-solution@v0
-#       with:
-#         environment-url: 'https://org8656d99b.crm8.dynamics.com/'
-#         user-name: 'KasifMd@kasifm.onmicrosoft.com'
-#         password-secret: ${{ secrets.password }}
-#         solution-name: ALMLab
-#         solution-output-file: out/exported/ALMLab.zip
+    - name: export-solution action
+      uses: microsoft/powerplatform-actions/export-solution@v0
+      with:
+        environment-url: 'https://org8656d99b.crm8.dynamics.com/'
+        user-name: 'KasifMd@kasifm.onmicrosoft.com'
+        password-secret: ${{ secrets.password }}
+        solution-name: CloningApp2
+        solution-output-file: out/exported/CloningApp2.zip
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
