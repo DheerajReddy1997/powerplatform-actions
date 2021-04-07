@@ -40,3 +40,4 @@ jobs:
         password-secret: ${{ secrets.password }}
         solution-name: CloningApp
         solution-output-file: CloningApp.zip
+        working-directory: 'out'
