@@ -49,6 +49,23 @@ jobs:
         environment-url: 'https://org8656d99b.crm8.dynamics.com/'
         user-name: 'KasifMd@kasifm.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
+        solution-name: EMPH2644
+        solution-output-file: out/exported/EMPH2644.zip
+
+    - name: unpack-solution action
+      uses: microsoft/powerplatform-actions/unpack-solution@v0
+      with:
+        solution-file: out/exported/EMPH2644.zip
+        solution-folder: out/solutions/EMPH2644
+        solution-type: 'Unmanaged'
+        overwrite-files: true
+
+    - name: export-solution action
+      uses: microsoft/powerplatform-actions/export-solution@v0
+      with:
+        environment-url: 'https://org8656d99b.crm8.dynamics.com/'
+        user-name: 'KasifMd@kasifm.onmicrosoft.com'
+        password-secret: ${{ secrets.password }}
         solution-name: CloningApp
         solution-output-file: out/exported/CloningApp.zip
 
